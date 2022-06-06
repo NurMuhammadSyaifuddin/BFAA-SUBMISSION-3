@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="github_users">GITHUB USERS</string>
+    <string name="search">Search</string>
+    <string name="close">close</string>
+    <string name="default_username">-</string>
+    <string name="profile">profile</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="splash">splash</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="tab3">Following</string>
+    <string name="tab2">Followers</string>
+    <string name="tab1">Repository</string>
+    <string name="no_data">-</string>
+    <string name="emptyData">Data Failed to Load</string>
+    <string name="no_users">Click search to find the user data you want</string>
+    <string name="users_not_find">Users not found</string>
+    <string name="FAVORITE">FAVORITE</string>
+    <string name="favorite">Favorite</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_data_favorite">No favorite users yet</string>
+    <string name="to_search_user">Search User</string>
+    <string name="insert_user_favorite">%s added</string>
+    <string name="delete_user_favorite">%s removed</string>
+</resources>

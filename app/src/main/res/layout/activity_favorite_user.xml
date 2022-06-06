@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.favorite.FavoriteUserActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/normal_100">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_100"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/FAVORITE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_close"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/small_100"
+        android:paddingVertical="@dimen/normal_100"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_favorite"
+        tools:listitem="@layout/item_user" />
+
+    <ImageView
+        android:id="@+id/img_no_data_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_no_data"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/no_data_favorite"
+        app:layout_constraintBottom_toTopOf="@id/tv_no_data_favorite"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/tv_no_data_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_favorite"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/img_no_data_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/small_100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_to_search_user"/>
+
+    <Button
+        android:id="@+id/btn_to_search_user"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_btn_favorite"
+        android:text="@string/to_search_user"
+        android:textSize="@dimen/caption"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/normal_100"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_no_data_favorite"
+        app:layout_constraintStart_toStartOf="@id/tv_no_data_favorite"
+        app:layout_constraintEnd_toEndOf="@id/tv_no_data_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

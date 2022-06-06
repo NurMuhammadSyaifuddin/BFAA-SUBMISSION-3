@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="github_users">GITHUB USERS</string>
+    <string name="search">Cari</string>
+    <string name="close">tutup</string>
+    <string name="default_username">-</string>
+    <string name="profile">profil</string>
+    <string name="repository">Gudang</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="splash">guyuran</string>
+    <string name="tab3">Mengikuti</string>
+    <string name="tab2">Pengikut</string>
+    <string name="tab1">Gudang</string>
+    <string name="no_data">-</string>
+    <string name="emptyData">Data Gagal Dimuat</string>
+    <string name="no_users">Klik cari untuk menemukan data pengguna yang kamu inginkan</string>
+    <string name="users_not_find">Pengguna tidak ditemukan</string>
+    <string name="FAVORITE">FAVORIT</string>
+    <string name="favorite">Favorit</string>
+    <string name="cancel">Batalkan</string>
+    <string name="no_data_favorite">Belum ada pengguna favorit</string>
+    <string name="to_search_user">Cari Pengguna</string>
+    <string name="insert_user_favorite">%s ditambahkan</string>
+    <string name="delete_user_favorite">%s dihapus</string>
+</resources>
